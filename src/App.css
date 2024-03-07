@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.settings-page {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1;
+}
+/* styles.css */
+.app {
+  font-family: Arial, sans-serif;
+}
+
+.settings-page {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.settings-page h2 {
+  color: #ffffff;
+}
+
+.settings-page label {
+  color: #fff;
+}
+
+.settings-page select {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.settings-page select:hover {
+  background-color: #444;
+}
+
+.settings-page select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #007bff;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.tooltip-top {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-trigger {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-theme {
+  background-color: #222;
+  color: #fff;
+}
+
+.light-theme {
+  background-color: #cfc9c9;
+  color: #000000;
 }
